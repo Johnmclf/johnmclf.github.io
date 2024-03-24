@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ia Morpion</title>
+    <link rel="stylesheet" href="styleProjet3.css">
+    <link rel="shortcut icon" href="./img/logoJohn.PNG" type="image/x-icon">
+</head>
+<body>
+    <div class="top">
+        <a href="index.html">Menu</a>
+    </div>
+    <h1>Ia Morpion en C++</h1>
+
+    <img id="mylogo" src="./img/logoJohn.PNG" alt="">
+
+    <div class="presentation">
+        <h2>Présentation :</h2><br>
+        <p>
+            Ce projet a été réalisé en groupe de 2 sur une période de 2 mois. <br>
+            Il fallait créer deux IA en c++. L'une devait aligner 5 ronds sur une grille 15X15,
+            et l'autre devait l'empêcher de gagner. À la fin, chaque groupe fait combattre ces IA pour connaître la meilleure.
+        </p>
+    </div>
+    
+    <div class="img">
+        <h2 class="one">Image :</h2>
+        <img id="img1" src="img/iacpp.PNG" alt="">
+    </div>
+
+    <div class="descritpion">
+        <h2>Description des deux IA</h2><br>
+        <li><strong> IA rond TEDM3 (Invaincu)</strong> 
+            <p>
+                Notre IA rond TEDM3, se base sur plusieurs logiques. La première et celle qu'aucune IA n'a su passer, c'est la diversion,
+                a l'aide d'un algorithme min-max, on essaye d'en aligner trois ronds ce qui est très facile,
+                 et quand trois ronds sont alignés, on place un rond a l'opposé de la grille, on répète l'opération, jusqu'à avoir 
+                 oo o, puis placé les deux qu'il reste pour gagner. Si cette logique ne passait pas, 
+                 on essaye de réaliser d'autres paternes, puis si rien ne marche on finissait avec un algorithme min-max sur 5 étages.
+            </p>
+        </li>
+        <li><strong> IA croix : </strong> 
+            <p>
+               Cette IA était basée sur un algorithme min-max a 5 étages, c'est-à-dire qu'on placé un rond sur la grille,
+                on regarde si les ronds gagnent, on le fait sur chaque case, si il ne gagne pas, on place un rond, 
+                et pour ce rond on place un autre rond, et on regarde si il y gagne, on répète l'opération à chaque fois. 
+                Ce qui veut dire qu'à l'étage 1, on aura testé environ 225 cases, à l'étage 2 on aura testé environ 50625 cases, ...
+                Heureusement, on ne va pas en dessus de l'étage 3, car sinon les temps de calcul seraient très longs.
+            </p>
+        </li>
+    </div>
+
+    <div class="telechager">
+        <a href="./codetelechargement/IAmorpion.zip" download="IAmorpion">Télécharger le code</a>
+    </div> 
+    
+    <div class="bandeau">
+        <p>John Micallef 2024</p><br>
+        <p>Email : john.micallef@iut-dijon.u-bourgogne.fr</p>
+
+    </div>
+
+
+</body>
+</html>
